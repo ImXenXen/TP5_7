@@ -22,7 +22,7 @@
 <body>
 <div class="container">
   <div class="card">
-    <h1>✅ Commande enregistrée</h1>
+    <h1>Commande enregistrée</h1>
     <p>Les produits ci-dessous ont été persistés en base.</p>
     <table>
       <thead><tr><th>Code</th><th>Libellé</th><th>Description</th></tr></thead>

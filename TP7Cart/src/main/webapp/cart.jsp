@@ -35,7 +35,7 @@
 </head>
 <body>
 <div class="container">
-  <h1>🛒 TP7 – Panier</h1>
+  <h1>TP7 – Panier</h1>
 
   <% if (message != null) { %><div class="banner ok"><%= message %></div><% } %>
   <% if (error != null)   { %><div class="banner err"><%= error %></div><% } %>
