@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>TP5 – Générateur de code-barres</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { font-family: system-ui, Arial, sans-serif; max-width: 520px; margin: 3rem auto; }
+    label { display:block; margin:.5rem 0 .25rem; }
+    input, select, button { width: 100%; padding:.6rem; }
+    form { border:1px solid #ddd; padding:1rem; border-radius:.5rem; }
+    small { color:#666; }
+  </style>
+</head>
+<body>
+  <h1>Générateur</h1>
+  <p><small>L’URL d’invocation de la servlet est <code>/qrcode</code>.</small></p>
+
+  <form method="post" action="qrcode" accept-charset="UTF-8">
+    <label for="code">Code</label>
+    <input id="code" name="code" required>
+
+    <label for="libelle">Libellé</label>
+    <input id="libelle" name="libelle" required>
+
+    <label for="type">Type</label>
+    <select id="type" name="type">
+      <option value="datamatrix" selected>DataMatrix</option>
+      <option value="code128">Code128</option>
+    </select>
+
+    <button type="submit" style="margin-top:1rem">Générer l’image</button>
+  </form>
+
+  <p style="margin-top:2rem">
+    <small>pas mal ce petit formatage</small>
+  </p>
+</body>
+</html>

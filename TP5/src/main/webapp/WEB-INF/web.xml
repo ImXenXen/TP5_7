@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+                             http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+  <display-name>TP5</display-name>
+
+  <servlet>
+    <servlet-name>QrCodeServlet</servlet-name>
+    <servlet-class>TP5.QrCodeServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>QrCodeServlet</servlet-name>
+    <url-pattern>/qrcode</url-pattern>
+  </servlet-mapping>
+
+  <welcome-file-list>
+    <welcome-file>Index.html</welcome-file>
+  </welcome-file-list>
+</web-app>
